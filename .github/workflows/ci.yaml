@@ -1,13 +1,13 @@
 name: testing
 on:
-     push:
-         branches:
-              -master
+    push:
+        branches:
+            - master
 jobs:
     welcome-user:
-         runs-on: ubuntu-latest
-         steps:
-            -name: checkout repository code
-             uses: actions/checkout@v2
-            -name: welcome user
-             run: echo "welcome to github actions"              
+        runs-on: ubuntu-latest
+        steps:
+            - name: check out repository code
+              uses: actions/checkout@v2
+            - name: welcome user
+              run: echo "welcome to github actions"             
